@@ -10,13 +10,13 @@ export default function ResultsTable({ userInput }) {
         <th>Year</th>
         <th>Investment Value</th>
         <th>Invested Capital</th>
-        <th>Total Interest</th>
+        <th>Total Earnings</th>
         <th>Interest (Year)</th>
       </tr>
     </thead>
 
     <tbody>
-      {results.map(result => <tr>
+      {results.map(result => <tr key={result.year}>
         <td>{result.year}</td>
         <td>{formatter.format(result.investmentValue)}</td>
         <td>{formatter.format(result.investedCapital)}</td>

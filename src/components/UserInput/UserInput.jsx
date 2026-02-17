@@ -3,10 +3,10 @@ import './UserInput.css'
 
 export default function UserInput({ setUserInput }) {
   const [input, setInput] = useState({
-    initial: 1000,
-    annual: 1200,
-    interest: 6,
-    years: 10
+    initial: 4848,
+    annual: 9600,
+    interest: 7,
+    years: 25
   });
 
   function handleChange(event) {
@@ -23,25 +23,25 @@ export default function UserInput({ setUserInput }) {
     <div>
       <label htmlFor="initial-input">INITIAL INVESTMENT</label>
       <input type="number" id="initial" value={input.initial} required
-        onChange={handleChange}
+        onChange={handleChange} max={999999999999}
       />
     </div>
     <div>
       <label htmlFor="contribution-input">ANNUAL CONTRIBUTION</label>
       <input type="number" id="annual" value={input.annual} required
-        onChange={handleChange}
+        onChange={handleChange} max={999999999999}
       />
     </div>
     <div>
       <label htmlFor="interest-input">INTEREST RATE</label>
       <input type="number" id="interest" value={input.interest} required
-        onChange={handleChange}
+        onChange={handleChange} max={1000}
       />
     </div>
     <div>
       <label htmlFor="years-input">YEARS</label>
       <input type="number" id="years" value={input.years} required
-        onChange={handleChange}
+        onChange={handleChange} min={1} max={100}
       />
     </div>
     <button>Calculate</button>
