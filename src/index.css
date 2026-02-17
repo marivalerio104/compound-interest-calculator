@@ -6,22 +6,26 @@
 
 :root {
   font-synthesis: none;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 body {
   min-height: 100vh;
   background: radial-gradient(#384a44, #1a1f1d);
-  font-family: 'Quicksand', sans-serif;
-  color: #e1eeeb;
+  color: #eee;
   padding: 1.5rem;
 }
 
 header {
   text-align: center;
-  margin: auto;
+  margin: 0 auto 2rem;
 }
 
 header img {
   width: 8rem;
   margin-bottom: 1rem;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }

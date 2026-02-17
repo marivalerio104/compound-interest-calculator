@@ -1,0 +1,56 @@
+#user-input {
+  padding: 1.5rem;
+  max-width: 32rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  background: linear-gradient(180deg, #307e6c, #2b996d);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#user-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+#user-input input {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #76c0ae;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: inherit;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#user-input button {
+  grid-column: 1 / -1;
+  justify-self: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 7.5rem;
+  height: 3rem;
+  color: #32664b;
+  border: 2px solid #32664b;
+  /* border: none; */
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
+}
+
+#user-input button:hover {
+  color: inherit;
+  background-color: #32664b;
+  border: 2px solid #eee;
+}
+
+@media (max-width: 510px) {
+  #user-input {
+    grid-template-columns: 1fr;
+  }
+}
