@@ -2,7 +2,7 @@
   padding: 1.5rem;
   max-width: 32rem;
   margin: auto;
-  border-radius: 0.5rem;
+  border-radius: 10px;
   background: linear-gradient(180deg, #307e6c, #2b996d);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -20,7 +20,7 @@
   padding: 0.5rem;
   width: 100%;
   border: 1px solid #76c0ae;
-  border-radius: 0.25rem;
+  border-radius: 4px;
   background-color: transparent;
   color: inherit;
   font-size: 1rem;
@@ -36,10 +36,9 @@
   height: 3rem;
   color: #32664b;
   border: 2px solid #32664b;
-  /* border: none; */
-  border-radius: 0.5rem;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.2s;
 }
 
@@ -49,7 +48,12 @@
   border: 2px solid #eee;
 }
 
-@media (max-width: 510px) {
+#user-input button:active {
+  color: #32664b;
+  background-color: #eee;
+}
+
+@media (max-width: 32.5rem) {
   #user-input {
     grid-template-columns: 1fr;
   }
