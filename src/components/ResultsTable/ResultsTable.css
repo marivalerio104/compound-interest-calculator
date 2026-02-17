@@ -1,0 +1,9 @@
+#results {
+  margin: auto;
+  border-spacing: 1.1rem;
+  text-align: right;
+}
+
+#results thead {
+  color: #83e6c0;
+}
